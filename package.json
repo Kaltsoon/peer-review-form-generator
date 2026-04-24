@@ -1,0 +1,23 @@
+{
+  "name": "peer-review-form-generator",
+  "version": "1.0.0",
+  "description": "Generate a peer review form in Google Forms from JSON.",
+  "main": "index.js",
+  "scripts": {
+    "setup": "clasp login && clasp create --type standalone --title \"Peer review form generator\"",
+    "sync": "clasp push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaltsoon/peer-review-form-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaltsoon/peer-review-form-generator/issues"
+  },
+  "homepage": "https://github.com/Kaltsoon/peer-review-form-generator#readme",
+  "dependencies": {
+    "@google/clasp": "^3.3.0"
+  }
+}
