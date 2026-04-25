@@ -27,7 +27,7 @@ function getPeerReviewFormConfig() {
       yourInformationTitle: "Omat tietosi",
       yourInformationHelper: "Syötä tähän omat tietosi.",
       nameTitle: "Nimi",
-      nameHelper: "Etunimi ja sukunimi",
+      nameHelper: "Etunimi ja sukunimi.",
       studentNumberTitle: "Opiskelijanumero",
       githubAccountTitle: "GitHub-käyttäjätunnus",
       githubAccountHelper: "GitHub-käyttäjätunnus, jota käytit projektissa.",
