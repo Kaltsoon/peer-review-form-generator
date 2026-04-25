@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "setup": "clasp login && clasp create --type standalone --title \"Peer review form generator\"",
-    "sync": "clasp push"
+    "sync": "clasp push",
+    "open": "clasp open-script"
   },
   "repository": {
     "type": "git",
