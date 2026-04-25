@@ -10,7 +10,7 @@ Requires Node.js >= 20.0.0.
 2. Authenticate and create the Apps Script project by running `npm run setup`.
 3. Add a `getPeerReviewFormConfig.js` file with the form config (see example below).
 4. Push the script to Google Apps Script by running `npm run sync`.
-5. Run the `generatePeerReviewForm` function in Google Apps Script.
+5. Open the script in Apps Script by running `npm run open` and execute the `generatePeerReviewForm` function.
 
 ## Configuration
 
