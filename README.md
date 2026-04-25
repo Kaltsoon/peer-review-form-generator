@@ -46,7 +46,7 @@ function getPeerReviewFormConfig() {
       managementHelper:
         "Tähän sisältyy backlogin hallinta, tapaamisten organisointi, prosessin kehittäminen (esim. retrospektiiveissä) ja projektin dokumentaation tuottaminen. 0 on huonoin arvosana ja 5 on paras.",
       totalTitle: (name) =>
-        `Minkä kokonaisarvosanan antaisit tiimiläiselle ${name.toUpperCase()} hänen panoksestaan projektin eteen?`,
+        `Minkä kokonaisarvosanan antaisit tiimiläiselle ${name.toUpperCase()} hänen panoksestaan projektiin?`,
       totalHelper:
         "Ota huomioon edellä mainitut arviointikohteet. 0 on huonoin arvosana ja 5 on paras.",
       totalDescriptionTitle: (name) =>
