@@ -7,9 +7,9 @@ Generate peer review forms in Google Forms from JSON config.
 Requires Node.js >= 20.0.0.
 
 1. Install dependencies by running `npm install`. 
-2. Authenticate and create the Apps Script project by running and `npm run setup`.
+2. Authenticate and create the Apps Script project by running `npm run setup`.
 3. Add a `getPeerReviewFormConfig.js` file with the form config (see example below).
-4. Push the script to Google Apps Script with `npm run sync`.
+4. Push the script to Google Apps Script by running `npm run sync`.
 5. Run the `generatePeerReviewForm` function in Google Apps Script.
 
 ## Configuration
