@@ -1,6 +1,6 @@
 # Peer Review Form Generator
 
-Generate peer review forms in Google Forms from JSON config.
+Configurable peer review form generator for Google Forms.
 
 ## How to use
 
