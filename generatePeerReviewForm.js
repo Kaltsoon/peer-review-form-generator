@@ -18,8 +18,13 @@ function generatePeerReviewForm() {
     ]);
   }
 
-  function GPF_generateForm(titlePrefix, teamName, teamMembers) {
-    const form = FormApp.create(`${titlePrefix}: ${teamName}`);
+  function GPF_generateForm(titlePrefix, description, teamName, teamMembers) {
+    const form = FormApp.create(`${titlePrefix}: ${teamName}`, true);
+
+    form
+      .setDescription(description)
+      .setShowLinkToRespondAgain(false)
+      .setProgressBar(true);
 
     form
       .addPageBreakItem()
@@ -54,7 +59,7 @@ function generatePeerReviewForm() {
     form
       .addPageBreakItem()
       .setTitle(studentName)
-      .setHelpText(CONFIG.translations.answerQuestionsOnTeamMember);
+      .setHelpText(CONFIG.translations.answerQuestionsOnTeamMember(studentName));
 
     GPF_addLikert(
       form,
@@ -88,7 +93,7 @@ function generatePeerReviewForm() {
 
   function GPF_main() {
     Object.entries(CONFIG.teams).forEach(([teamName, members]) => {
-      const form = GPF_generateForm(CONFIG.titlePrefix, teamName, members);
+      const form = GPF_generateForm(CONFIG.titlePrefix, CONFIG.description, teamName, members);
       Logger.log(`Created form for ${teamName}: ${form.getEditUrl()}`);
     });
   }
