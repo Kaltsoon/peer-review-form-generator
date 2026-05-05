@@ -59,7 +59,9 @@ function generatePeerReviewForm() {
     form
       .addPageBreakItem()
       .setTitle(studentName)
-      .setHelpText(CONFIG.translations.answerQuestionsOnTeamMember(studentName));
+      .setHelpText(
+        CONFIG.translations.answerQuestionsOnTeamMember(studentName),
+      );
 
     GPF_addLikert(
       form,
@@ -93,8 +95,16 @@ function generatePeerReviewForm() {
 
   function GPF_main() {
     Object.entries(CONFIG.teams).forEach(([teamName, members]) => {
-      const form = GPF_generateForm(CONFIG.titlePrefix, CONFIG.description, teamName, members);
-      Logger.log(`Created form for ${teamName}: ${form.getEditUrl()}`);
+      const form = GPF_generateForm(
+        CONFIG.titlePrefix,
+        CONFIG.description,
+        teamName,
+        members,
+      );
+
+      Logger.log(`${teamName} edit: ${form.getEditUrl()}`);
+      Logger.log(`${teamName} answer: ${form.getPublishedUrl()}`);
+      Logger.log(`${teamName} results: ${form.getSummaryUrl()}`);
     });
   }
 
