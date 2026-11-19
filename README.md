@@ -18,7 +18,7 @@ Requires Node.js >= 20.0.0.
 function getPeerReviewFormConfig() {
   return {
     titlePrefix: "Syksy 2026 - Ohjelmistoprojekti 2 vertaisarviointi",
-    description: "Tässä vertaisarvioinnissa arvioit omaa sekä tiimisi muiden jäsenten työskentelyä projektissanne.",
+    description: "Tässä vertaisarvioinnissa arvioit omaa sekä tiimisi muiden jäsenten työskentelyä projektissanne. Arviointi on vain opettajan käyttöön, eivätkä muut tiimiläiset näe sitä.",
     teams: {
       TeamA: ["John Doe", "Peter Parker"],
       TeamB: ["John Smith", "Emma Watson"],
